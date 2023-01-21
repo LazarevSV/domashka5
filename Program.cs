@@ -107,7 +107,7 @@ void ShowArray(double[] array)
         Console.WriteLine(array[i]);
     Console.WriteLine();
 }
-double GetDiff(double[] array)
+double DifferentMinMax(double[] array)
 {
     double min = array[0];
     double max = array[0];
@@ -129,5 +129,5 @@ int max = Convert.ToInt32(Console.ReadLine());
 double[] array = CreateRandomDoubleArray(length, min, max);
 ShowArray(array);
 
-Console.WriteLine($"Разница между максимальным и минимальным элементом массива = {GetDiff(array)} ");
+Console.WriteLine($"Разница между максимальным и минимальным элементом массива = {DifferentMinMax(array)} ");
 
